@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-module uart(clk, rstb, scisel, rw, rxd, addr, dbus, sciirq, txd);
+module uart
     (input clk, rstb, scisel, rw, rxd,
      input [1:0] addr,
      inout [7:0] dbus,
