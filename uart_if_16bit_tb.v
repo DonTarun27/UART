@@ -1,9 +1,9 @@
 `timescale 1ns/1ps
-module uart_if_tb;
+module uart_if_16bit_tb;
     reg clk, rstb, rxd;
     wire txd;
 
-    uart_if dut(clk, rstb, rxd, txd);
+    uart_if_16bit dut(clk, rstb, rxd, txd);
 
     initial
     begin {clk, rstb, rxd} = 3'b011;
