@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-module uart_if
+module uart_if_16bit
     (input clk, rstb, rxd,
      output txd);
 
