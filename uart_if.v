@@ -8,6 +8,7 @@ module uart_if
     reg [15:0] rx_dt;
     wire [15:0] tx_dt;
     wire [7:0] dbus;
+    wire sciirq;
     reg [7:0] rx_1d, wdt;
     reg scisel, rw, cnt, inv, uld, ld_tdre, tdre;
     reg [1:0] addr, cst, nst;
