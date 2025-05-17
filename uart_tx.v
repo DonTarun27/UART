@@ -1,8 +1,8 @@
 `timescale 1ns/1ps
 module uart_tx
-    (input clk, rstb, bclk, tdre, loadtdr;
-     input [7:0] dbus;
-     output settdre, txd;
+    (input clk, rstb, bclk, tdre, loadtdr,
+     input [7:0] dbus,
+     output settdre, txd);
 
     localparam idle = 2'b00, sync = 2'b01, tdata = 2'b11;
     reg [1:0] cst, nst;
